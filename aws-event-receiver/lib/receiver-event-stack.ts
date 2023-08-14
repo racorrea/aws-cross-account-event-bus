@@ -10,7 +10,7 @@ export class ReceiverStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const SENDER_ACCOUNT_ID = "453027466500";
+    const SENDER_ACCOUNT_ID = "123456789012";
 
     const RECEIVER_BUS = new events.EventBus(this, 'receiver-bus', {
       eventBusName: 'receiver-bus',

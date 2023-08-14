@@ -9,7 +9,7 @@ export class SenderEventStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const SENDER_ACCOUNT_ID = "537437622630";
+    const SENDER_ACCOUNT_ID = "123456789012";
     const RECEIVER_EVENT_BUS_NAME = "receiver-bus"
     const RECEIVER_EVENT_BUS_ARN = `arn:aws:events:us-east-1:${SENDER_ACCOUNT_ID}:event-bus/${RECEIVER_EVENT_BUS_NAME}`;
 
