@@ -57,18 +57,3 @@ export class ReceiverStack extends cdk.Stack {
     RECEIVER_FUNCTION_LOGGROUP.grantWrite(RECEIVER_FUNCTION);
   }
 }
-
-/**
-     * {
-        "Version": "2012-10-17",
-        "Statement": [{
-          "Sid": "AllowAccountToPutEvents",
-          "Effect": "Allow",
-          "Principal": {
-            "AWS": "arn:aws:iam::453027466500:root"
-          },
-          "Action": "events:PutEvents",
-          "Resource": "arn:aws:events:us-east-1:537437622630:event-bus/destino"
-        }]
-      }
-     */
